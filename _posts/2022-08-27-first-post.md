@@ -2,10 +2,10 @@
 title: "GitHub Pages에서 블로그 시작하기"
 excerpt: "GitHub Pages를 이용하여 블로그를 새로 시작하는 세가지 이유"
 categories:
-    - Blog
+    - 글쓰기
 tags:
-    - Blog
-last_modified_at: 2022-08-27T13:20:00-13:40:00
+    - 글쓰기
+    - 블로그
 ---
 
 GitHub Pages를 이용하여 블로그를 새로 시작한다.
@@ -18,5 +18,3 @@ GitHub Pages를 이용하여 블로그를 새로 시작한다.
 * `Jekyll`을 이용하여 쉽게 커스터마이징 할 수 있음.
 
 더 좋은 기능은 차차 알아가 볼 것이다.
-
-이 글이 마지막으로 수정된 시간은 {{ page.last_modified_at }} 이다.
