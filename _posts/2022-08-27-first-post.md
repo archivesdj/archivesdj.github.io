@@ -19,4 +19,4 @@ GitHub Pages를 이용하여 블로그를 새로 시작한다.
 
 더 좋은 기능은 차차 알아가 볼 것이다.
 
-이 글이 마지막으로 수정되 시간은 {{ page.last_modified_at }} 이다.
+이 글이 마지막으로 수정된 시간은 {{ page.last_modified_at }} 이다.
