@@ -1,6 +1,6 @@
 ---
 title: "GitHub Pages에서 블로그 시작하기"
-excerpt: "archivesdj.github.io라는 주소에서 Jekyll를 이용하여 Markdown으로 글을 쓸 수 있다."
+excerpt: "GitHub Pages를 이용하여 블로그를 새로 시작하는 세가지 이유"
 categories:
     - Blog
 tags:
@@ -19,4 +19,4 @@ GitHub Pages를 이용하여 블로그를 새로 시작한다.
 
 더 좋은 기능은 차차 알아가 볼 것이다.
 
-이 글이 마지막으로 수정되 시간은 {{[page.last_modified_at]}}이다.
+이 글이 마지막으로 수정되 시간은 {{ page.last_modified_at }} 이다.
