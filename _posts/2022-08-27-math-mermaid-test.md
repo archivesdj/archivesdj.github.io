@@ -25,94 +25,6 @@ toc_sticky: true
 
 ### 셋업
 
-이 둘을 따로 따로 셋업하는 방법이 있기는 하지만,
-이 둘을 모두 해결해주는 Jekyll 플러그인이 있다.
-
-[Jekyll Spaceship](https://github.com/jeffreytse/jekyll-spaceship)
-
-* `Gemfile`에 다음 내용을 추가
-
-```yaml
-# If you have any plugins, put them here!
-group :jekyll_plugins do
-  gem 'jekyll-spaceship'
-end
-```
-
-* `bash`에서 `bundle install`를 실행
-* `_config.yml`파일을 열어서 `plugins:` 항목에 다음과 같이 추가
-
-```yaml
-plugins:
-  - jekyll-spaceship
-```
-
-* `_config.yml`파일의 마지막 부분에 다음 내용 추가
-
-```yaml
-# Where things are
-jekyll-spaceship:
-  # default enabled processors
-  processors:
-    - table-processor
-    - mathjax-processor
-    - plantuml-processor
-    - mermaid-processor
-    - polyfill-processor
-    - media-processor
-    - emoji-processor
-    - element-processor
-  mathjax-processor:
-    src:
-      - https://polyfill.io/v3/polyfill.min.js?features=es6
-      - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-    config:
-      tex:
-        inlineMath:
-          - ['$','$']
-          - ['\(','\)']
-        displayMath:
-          - ['$$','$$']
-          - ['\[','\]']
-      svg:
-        fontCache: 'global'
-    optimize: # optimization on building stage to check and add mathjax scripts
-      enabled: true # value `false` for adding to all pages
-      include: []   # include patterns for math expressions checking (regexp)
-      exclude: []   # exclude patterns for math expressions checking (regexp)
-  plantuml-processor:
-    mode: default  # mode value 'pre-fetch' for fetching image at building stage
-    css:
-      class: plantuml
-    syntax:
-      code: 'plantuml!'
-      custom: ['@startuml', '@enduml']
-    src: http://www.plantuml.com/plantuml/svg/
-  mermaid-processor:
-    mode: default  # mode value 'pre-fetch' for fetching image at building stage
-    css:
-      class: mermaid
-    syntax:
-      code: 'mermaid!'
-      custom: ['@startmermaid', '@endmermaid']
-    config:
-      theme: default
-    src: https://mermaid.ink/svg/
-  media-processor:
-    default:
-      id: 'media-{id}'
-      class: 'media'
-      width: '100%'
-      height: 350
-      frameborder: 0
-      style: 'max-width: 600px; outline: none;'
-      allow: 'encrypted-media; picture-in-picture'
-  emoji-processor:
-    css:
-      class: emoji
-    src: https://github.githubassets.com/images/icons/emoji/
-```
-
 ### 테스트
 
 #### 수식
@@ -120,7 +32,7 @@ jekyll-spaceship:
 * 입력
 
 ```markdown
-인라인 수식 : $f(x) = e^x$
+인라인 수식 : \\(f(x) = e^x\\)
 
 수식
 
@@ -129,11 +41,17 @@ $$f(x) = \frac{e^x}{(1+x)}$$
 
 * 출력
 
-인라인 수식 : $f(x) = e^x$
+인라인 수식 : \\(f(x) = e^x\\) $f(x) = e^x$
 
 수식
 
 $$f(x) = \frac{e^x}{(1+x)}$$
+
+$$
+\begin{equation}
+   E = mc^2
+\end{equation}
+$$
 
 #### 다이어그램
 
@@ -141,20 +59,22 @@ $$f(x) = \frac{e^x}{(1+x)}$$
 
 * 입력
 
-&#96;&#96;&#96;mermaid!<br>
-    graph TD;<br>
-    A-->B;<br>
-    A-->C;<br>
-    B-->D;<br>
-    C-->D;<br>
-&#96;&#96;&#96;
-
-* 출력
-
-```mermaid!
+```
+<div class="mermaid">
 graph TD;
   A-->B;
   A-->C;
   B-->D;
   C-->D;
+</div>
 ```
+
+* 출력
+
+<div class="mermaid">
+graph TD;
+  A-->B;
+  A-->C;
+  B-->D;
+  C-->D;
+</div>
