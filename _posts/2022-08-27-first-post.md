@@ -9,7 +9,7 @@ last_modified_at: 2022-08-27T13:20:00-13:40:00
 ---
 
 GitHub Pages를 이용하여 블로그를 새로 시작한다.
-주소는 [archivesdj.github.io](https://archivesdj.github.io)이다.
+주소는 [archivesdj.github.io]({{ site.url }})이다.
 
 티스토리에서 운영하던 [기존 블로그](https://dowhati1.tistory.com/)를 놔두고 새로 깃허브에서 시작하는 이유는 다음과 같다.
 
