@@ -1,12 +1,13 @@
 ---
 title: "GitHub Pages에서 블로그 시작하기"
-excerpt: "GitHub Pages를 이용하여 블로그를 새로 시작하는 세가지 이유"
 categories:
     - 글쓰기
 tags:
     - 글쓰기
     - 블로그
 ---
+
+## GitHub Pages를 이용하여 블로그를 새로 시작하는 세가지 이유
 
 GitHub Pages를 이용하여 블로그를 새로 시작한다.
 주소는 [archivesdj.github.io]({{ site.url }})이다.
@@ -17,4 +18,4 @@ GitHub Pages를 이용하여 블로그를 새로 시작한다.
 * `Markdown` 문법을 활용하여 쉽게 글을 쓸 수 있음.
 * `Jekyll`을 이용하여 쉽게 커스터마이징 할 수 있음.
 
-더 좋은 기능은 차차 알아가 볼 것이다.
+배워야 할 것이 많다. 더 좋은 기능은 차차 알아가 볼 것이다.

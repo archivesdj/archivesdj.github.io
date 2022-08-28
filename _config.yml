@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Archives of Defective Jem"
+title                    : "완벽하지 않은 지식의 저장고"
 title_separator          : "-"
-subtitle                 : "Let's do whatever I want to do" # site tagline that appears below site title in masthead
+subtitle                 : "Archives of Defective Jem" # site tagline that appears below site title in masthead
 name                     : "small dj"
-description              : "완벽하지 않은 지식의 저장고"
+description              : "하고 싶은 일을 하자. Let's do whatever I want to do."
 url                      : "https://archivesdj.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
