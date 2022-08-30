@@ -4,7 +4,6 @@ categories:
     - 글쓰기
 tags:
     - 글쓰기
-    - 블로그
 ---
 
 ## GitHub Pages를 이용하여 블로그를 새로 시작하는 세가지 이유
@@ -19,3 +18,7 @@ GitHub Pages를 이용하여 블로그를 새로 시작한다.
 * `Jekyll`을 이용하여 쉽게 커스터마이징 할 수 있음.
 
 배워야 할 것이 많다. 더 좋은 기능은 차차 알아가 볼 것이다.
+
+### 참고 사이트
+
+* [GitHub Pages 블로그 소개](https://devinlife.com/howto%20github%20pages/github-blog-intro/)

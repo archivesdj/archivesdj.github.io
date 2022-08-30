@@ -1,17 +1,17 @@
 ---
-title: "GitHub/Jekyll 블로그에 자바스크립트 추가하기 1"
+title: "GitHub/Jekyll 블로그에 수식 포함 글쓰기"
+excerpt:
 categories:
     - 글쓰기
 tags:
     - 글쓰기
-    - 블로그
     - 수식
 math: true
 toc: true
 toc_sticky: true
 ---
 
-## 수식, 다이어그램,차트 등이 포함된 글을 써보자
+## LaTeX 문법을 활용한 수식(MathJax)이 포함된 글을 써보자
 
 글을 쓰다 보면 수식, 다이어그램, 차트 등을 포함시켜야 하는 경우가 많다.
 
@@ -84,9 +84,9 @@ toc_sticky: true
 
 참고로 위의 내용에 `{`, `}` 과 `%` 사이의 빈칸은 없애야 함.
 
-### 작성 글의 YMF 수정
+### 작성 글의 YFM 수정
 
-> 작성할 글의 YMF(Yaml front matter) 수정
+> 작성할 글의 YFM (Yaml front matter) 수정
 
 위에서 `if` 다음에 `page.math`를 추가하였으므로, 아래와 같이 YMF에서 `math: true`를 해주면 `MathJax` 자바스크립트를 사용할 수 있게 된다.
 
