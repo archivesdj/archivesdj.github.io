@@ -26,6 +26,7 @@ toc_sticky: true
 * `View > Terminal` 메뉴를 클릭하여 터미널 실행
     * VS Code 외부의 터미널을 사용해도 됨
 * 터미널에서 다음 명령어 실행
+
 ```
 dotnet new sln
 ```
@@ -33,15 +34,20 @@ dotnet new sln
 ### 클래스 라이브러리 프로젝트 만들기
 
 * 솔루션에 추가할 `StringLibrary` 프로젝트 만들기 (터미널에 다음 입력)
+
 ```
 dotnet new classlib -o StringLibrary
 ```
+
 * `-o` 또는 `--output` 옵션은 현재 폴더 아래에 새로운 폴더를 만들고 거기에 만든다는 뜻
 * 솔루션 파일에 위에서 만든 프로젝트 추가하기
+
 ```
 dotnet sln add StringLibrary/StringLibrary.csproj
 ```
+
 * `Class1.cs`파일에 다음 내용을 복사
+
 ```cs
 namespace UtilityLibraries;
 
@@ -57,7 +63,9 @@ public static class StringLibrary
     }
 }
 ```
+
 * 빌드하여 에러가 없는지 체크
+
 ```
 dotnet build
 ```
@@ -65,14 +73,19 @@ dotnet build
 ### 콘솔 앱 만들기
 
 * 솔루션에 추가할 `ShowCase` 프로젝트 만들기
+
 ```
 dotnet new console -o ShowCase
 ```
+
 * 솔루션 파일에 위에서 만든 프로젝트 추가하기
+
 ```
 dotnet sln add ShowCase/ShowCase.csproj
 ```
+
 * `ShowCase/Program.cs` 파일에 다음 코드 복사하기
+
 ```cs
 using UtilityLibraries;
 
@@ -112,12 +125,16 @@ class Program
     }
 }
 ```
+
 * 프로젝트 레퍼런스 추가하기
     * `ShowCase`프로젝트에서 `StringLibrary`프로젝트를 참조하기 때문에 레퍼런스를 추가해 주어야 한다.
+
 ```
 dotnet add ShowCase/ShowCase.csproj reference StringLibrary/StringLibrary.csproj
 ```
+
 * 앱 실행하기
+
 ```
 dotnet run --project ShowCase/ShowCase.csproj
 ```
