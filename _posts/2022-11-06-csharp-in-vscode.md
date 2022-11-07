@@ -11,6 +11,8 @@ toc: true
 toc_sticky: true
 ---
 
+Visual Studio Code와 DOTNET의 CLI 명령을 이용하여 콘솔앱 및 클래스라이브러리 등을 만들어 보자.
+
 ## 필요사항
 
 * [VS Code](https://code.visualstudio.com/) 및 [C# Extensions](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) 설치
